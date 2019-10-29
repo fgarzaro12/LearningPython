@@ -8,10 +8,21 @@
 {% if latest_poll_list %}
 <table class="table table-hover">
     <tbody>
+        <tr>
+            <td>
+                Description
+            </td>
+            <td>
+                Publication Date
+            </td>
+        </tr>
         {% for poll in latest_poll_list %}
         <tr>
             <td>
                 <a href="{% url 'app:detail' poll.id %}">{{poll.text}}</a>
+            </td>
+            <td>
+                {{poll.pub_date}}
             </td>
         </tr>
         {% endfor %}

@@ -14,6 +14,7 @@ class PollAdmin(admin.ModelAdmin):
     """Definition of the Poll editor."""
     fieldsets = [
         (None, {'fields': ['text']}),
+        (None, {'fields': ['author']}),
         ('Date information', {'fields': ['pub_date']}),
     ]
     inlines = [ChoiceInline]
