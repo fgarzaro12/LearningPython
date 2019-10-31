@@ -58,8 +58,10 @@
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
     <Folder Include="DjangoPolls\" />
+    <Folder Include=".ebextensions\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".ebextensions\django.config" />
     <Content Include="db.sqlite3" />
     <Content Include="requirements.txt" />
     <Content Include="app\samples.json" />
